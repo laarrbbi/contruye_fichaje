@@ -1,0 +1,936 @@
+{
+  "app": {
+    "name": "Construye Fichaje",
+    "tagline": "Construction jobs and building companies, in Spain."
+  },
+  "common": {
+    "loading": "Loading…",
+    "loadFailed": "Couldn't load. Check your connection.",
+    "retry": "Try again",
+    "error": "Something went wrong. Please try again.",
+    "save": "Save",
+    "saved": "Saved",
+    "saving": "Saving…",
+    "cancel": "Cancel",
+    "close": "Close",
+    "edit": "Edit",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "seeAll": "See all",
+    "search": "Search",
+    "all": "All",
+    "any": "Any",
+    "yes": "Yes",
+    "no": "No",
+    "or": "or",
+    "optional": "optional",
+    "required": "Required",
+    "page": "Page {{page}} of {{last}}",
+    "results_one": "{{count}} result",
+    "results_other": "{{count}} results",
+    "vatIncluded": "VAT included",
+    "free": "Free",
+    "credits_one": "{{count}} credit",
+    "credits_other": "{{count}} credits",
+    "contacts_one": "{{count}} contact",
+    "contacts_other": "{{count}} contacts",
+    "until": "until {{date}}",
+    "years_one": "{{count}} year",
+    "years_other": "{{count}} years",
+    "province": "Province",
+    "city": "Town",
+    "allSpain": "All of Spain",
+    "copy": "Copy",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "email": "Email"
+  },
+  "nav": {
+    "main": "Main navigation",
+    "home": "Home",
+    "empleo": "Jobs",
+    "obras": "Building work",
+    "jobs": "Job offers",
+    "forCompanies": "For companies",
+    "companies": "Building companies",
+    "forProfessionals": "For professionals",
+    "login": "Sign in",
+    "register": "Create account",
+    "registerShort": "Sign up",
+    "logout": "Sign out",
+    "account": "My account",
+    "messages": "Messages",
+    "admin": "Admin",
+    "changeLanguage": "Change language",
+    "worker": {
+      "home": "My applications",
+      "profile": "My profile",
+      "jobs": "Find jobs"
+    },
+    "employer": {
+      "home": "My job posts",
+      "workers": "Find workers",
+      "billing": "Plan and payments",
+      "profile": "Company"
+    },
+    "client": {
+      "home": "My requests",
+      "new": "New request",
+      "companies": "Companies"
+    },
+    "provider": {
+      "home": "Requests",
+      "unlocked": "My clients",
+      "billing": "Credits",
+      "profile": "Company"
+    }
+  },
+  "brand": {
+    "empleo": "EMPLEO",
+    "obras": "OBRAS",
+    "fichaje": "FICHAJE"
+  },
+  "footer": {
+    "about": "Two separate platforms for construction in Spain: Empleo, to work on site and hire staff; Obras, to find a company to do your building work.",
+    "empleo": "Empleo (jobs)",
+    "obras": "Obras (building work)",
+    "account": "Account",
+    "copyright": "© {{year}} Construye Fichaje",
+    "credits": "Illustration video and photos: Pexels and Pixabay (free licence). No image shows work by a company on the platform."
+  },
+  "home": {
+    "eyebrow": "Construction · Spain",
+    "title": "Construction, all in one place.",
+    "lead": "Two separate platforms, each with its own accounts. Go into the one you need.",
+    "empleo": {
+      "label": "Construye Empleo",
+      "title": "Site work, and staff for your company",
+      "text": "Tradespeople, labourers, installers and site technicians, with the companies that hire them.",
+      "worker": "Workers: a profile in two minutes, apply with one tap. Always free.",
+      "employer": "Companies: post for free, get applicants and unlock the chat.",
+      "cta": "Go to Empleo"
+    },
+    "obras": {
+      "label": "Construye Obras",
+      "title": "A company for your build or refurbishment",
+      "text": "Tell us what you need and get calls from companies in your area.",
+      "client": "Homeowners: describe your project for free; up to {{max}} companies contact you.",
+      "provider": "Companies: requests for your trades and area; pay only for the ones you want.",
+      "cta": "Go to Obras"
+    },
+    "separate": "Empleo and Obras never mix: an Empleo account sees nothing of Obras, and the other way round."
+  },
+  "empleo": {
+    "eyebrow": "Construye Empleo",
+    "title": "Site work, no runaround.",
+    "lead": "Job offers from construction companies all over Spain. Create your profile once, apply to any offer with one tap and talk to the company in the chat.",
+    "searchTrade": "Trade",
+    "searchProvince": "Province",
+    "searchButton": "Search jobs",
+    "employerCta": "I'm a company: post for free",
+    "howTitle": "How it works",
+    "forWorkers": "For workers",
+    "forEmployers": "For companies",
+    "workerSteps": {
+      "1": {
+        "title": "Your profile is your CV",
+        "text": "Trade, years of experience, TPC card, safety training and driving licence. Two minutes, from your phone."
+      },
+      "2": {
+        "title": "Apply with one tap",
+        "text": "You see an offer you like and you apply. No cover letters, no forms."
+      },
+      "3": {
+        "title": "The company writes to you",
+        "text": "When they're interested, they open a chat with you. We let you know by email."
+      }
+    },
+    "employerSteps": {
+      "1": {
+        "title": "Post for free",
+        "text": "Trade, area, contract and pay. Your offer goes live straight away."
+      },
+      "2": {
+        "title": "Get applicants",
+        "text": "See who applies: trade, experience, training and area."
+      },
+      "3": {
+        "title": "Unlock and chat",
+        "text": "Activate the offer to see phone numbers and chat with all its applicants."
+      }
+    },
+    "latest": "Latest offers",
+    "trades": "By trade",
+    "companyBand": {
+      "title": "Need staff for your site?",
+      "text": "Posting is free. To chat with applicants, activate the offer from {{price}}.",
+      "cta": "See plans for companies"
+    },
+    "noLatest": "No offers published yet."
+  },
+  "jobs": {
+    "title": "Construction job offers",
+    "lead": "Every published offer, featured ones first.",
+    "searchPlaceholder": "Job, site or town",
+    "trade": "Trade",
+    "contract": "Contract",
+    "empty": "No offers match these filters.",
+    "clear": "Clear filters",
+    "featured": "Featured",
+    "applied": "Applied",
+    "published": "Posted {{when}}",
+    "vacancies_one": "{{count}} position",
+    "vacancies_other": "{{count}} positions",
+    "salaryUndisclosed": "Pay to be agreed",
+    "salaryRange": "{{min}} – {{max}} {{period}}",
+    "salaryFrom": "From {{min}} {{period}}",
+    "salaryUpTo": "Up to {{max}} {{period}}",
+    "tpc": "TPC card",
+    "license": "Driving licence",
+    "accommodation": "Accommodation",
+    "experience": "Minimum experience",
+    "noExperience": "No experience needed",
+    "start": "Start",
+    "workday": "Hours",
+    "description": "The job",
+    "requirements": "Requirements",
+    "aboutCompany": "The company",
+    "apply": {
+      "title": "Apply for this job",
+      "button": "Apply",
+      "messageLabel": "A message for the company",
+      "messageHint": "Optional. For example, when you can start.",
+      "done": "You've applied",
+      "doneText": "The company can see your profile. If they're interested, they'll write to you in the chat.",
+      "guest": "Create your free profile to apply",
+      "guestText": "No CV needed: your worker profile is what the company sees.",
+      "login": "I already have an account",
+      "notWorker": "Applications are for worker accounts.",
+      "own": "This is your job post.",
+      "manage": "See applicants",
+      "closed": "This offer is no longer taking applications.",
+      "status": "Status: {{status}}",
+      "openChat": "Open the chat"
+    },
+    "notFound": "This offer doesn't exist or is no longer published.",
+    "backToBoard": "Back to job offers"
+  },
+  "employerPricing": {
+    "eyebrow": "For companies",
+    "title": "Staff for your site, this week.",
+    "lead": "Post your offer for free and see who applies. You only pay when you want to talk to the applicants.",
+    "steps": {
+      "1": {
+        "title": "Post for free",
+        "text": "Your offer is listed in the search for 30 days."
+      },
+      "2": {
+        "title": "See the applicants",
+        "text": "Trade, experience, TPC card, safety training and area of everyone who applies."
+      },
+      "3": {
+        "title": "Unlock the chat",
+        "text": "With the offer activated, you see their phone and email and can write to them."
+      }
+    },
+    "plansTitle": "Plans",
+    "free": {
+      "name": "Basic",
+      "text": "Post and receive applications.",
+      "features": [
+        "Offer listed for 30 days",
+        "Unlimited applications",
+        "Summary profile of each applicant"
+      ]
+    },
+    "cta": "Post an offer for free",
+    "ctaLogged": "Go to my job posts",
+    "faqTitle": "Questions",
+    "faq": {
+      "1": {
+        "q": "What can I see without paying?",
+        "a": "How many people applied and each one's profile: trade, years of experience, safety training, TPC card, driving licence and area. Full name, phone, email and the chat unlock when you activate the offer."
+      },
+      "2": {
+        "q": "Is it a subscription?",
+        "a": "No. Every payment is one-off: an offer activated for 30 days, a 30-day plan or a pack of contacts. Nothing renews by itself."
+      },
+      "3": {
+        "q": "What are contacts?",
+        "a": "They let you write to workers in the directory who haven't applied to your offer. Each new worker you contact uses one; writing to them again costs nothing."
+      },
+      "4": {
+        "q": "What if the worker doesn't reply?",
+        "a": "The chat stays open with every applicant of the offer while the activation lasts, and the conversation is kept afterwards."
+      }
+    }
+  },
+  "products": {
+    "offer_active": {
+      "name": "Active offer",
+      "text": "Chat and contact details for every applicant of one offer.",
+      "features": [
+        "Phone and email of each applicant",
+        "Chat with everyone who applied",
+        "30 days"
+      ]
+    },
+    "offer_premium": {
+      "name": "Premium offer",
+      "text": "Everything in Active, plus your offer at the top of the search.",
+      "features": [
+        "Everything in Active offer",
+        "Featured at the top of the search",
+        "«Featured» badge",
+        "30 days"
+      ]
+    },
+    "employer_pass": {
+      "name": "Company plan",
+      "text": "All your offers unlocked for 30 days.",
+      "features": [
+        "All your offers unlocked",
+        "{{credits}} directory contacts",
+        "30 days"
+      ]
+    },
+    "contacts_10": {
+      "name": "Contacts pack",
+      "text": "Write to workers in the directory.",
+      "features": [
+        "{{credits}} new workers",
+        "Never expires"
+      ]
+    },
+    "leads_5": {
+      "name": "Starter pack",
+      "text": "To try with a few requests.",
+      "features": [
+        "{{credits}} credits",
+        "Never expires"
+      ]
+    },
+    "leads_15": {
+      "name": "Builder pack",
+      "text": "For a company that quotes every week.",
+      "features": [
+        "{{credits}} credits",
+        "Never expires"
+      ]
+    },
+    "leads_40": {
+      "name": "Contractor pack",
+      "text": "For sales teams.",
+      "features": [
+        "{{credits}} credits",
+        "Never expires"
+      ]
+    },
+    "perOffer": "per offer",
+    "per30": "30 days",
+    "oneTime": "one-off",
+    "buy": "Buy",
+    "activate": "Activate",
+    "popular": "Most chosen"
+  },
+  "obras": {
+    "eyebrow": "Construye Obras",
+    "title": "Your project, in the hands of a real company.",
+    "lead": "Tell us what you need: a refurbishment, a roof, a new house. Up to {{max}} companies in your area call you with their quote. Free, no strings attached.",
+    "cta": "Get free quotes",
+    "ctaCompanies": "See companies",
+    "howTitle": "How it works",
+    "steps": {
+      "1": {
+        "title": "Describe your project",
+        "text": "What you want done, where, by when and your rough budget."
+      },
+      "2": {
+        "title": "Companies see it",
+        "text": "Only companies in that trade that work in your province."
+      },
+      "3": {
+        "title": "Up to {{max}} contact you",
+        "text": "Talk to them in the chat or on the phone and choose. No more calls than that."
+      }
+    },
+    "categoriesTitle": "What you can ask for",
+    "providerBand": {
+      "title": "Do you run a building or refurbishment company?",
+      "text": "Get requests from clients in your area. No fee: pay only for the ones you want, with credits.",
+      "cta": "See how it works"
+    },
+    "privacy": "Your phone number is only seen by the companies that unlock your request, and that's {{max}} at most."
+  },
+  "providerPricing": {
+    "eyebrow": "For building and refurbishment companies",
+    "title": "Clients who already want the work done.",
+    "lead": "You see the requests for your trades and province before paying anything. If one interests you, unlock it with credits and you have the client's phone number.",
+    "costTitle": "What a request costs",
+    "costText": "It depends on the size of the job. Each request is unlocked by {{max}} companies at most.",
+    "cta": "Register my company",
+    "ctaLogged": "See requests",
+    "packsTitle": "Credit packs"
+  },
+  "companies": {
+    "title": "Building and refurbishment companies",
+    "lead": "Companies working with Construye Obras. To get a call, publish your request: it reaches the ones in your trade and area.",
+    "category": "Speciality",
+    "empty": "No companies match these filters yet.",
+    "since": "Since {{year}}",
+    "cta": "Publish my request"
+  },
+  "auth": {
+    "tagline": "Building is done by people. This is where they meet.",
+    "loginTitle": "Sign in",
+    "loginSubtitle": "With your account's email.",
+    "email": "Email",
+    "password": "Password",
+    "passwordConfirm": "Repeat the password",
+    "showPassword": "Show the password",
+    "hidePassword": "Hide the password",
+    "submitLogin": "Sign in",
+    "invalid": "The email or password is not correct.",
+    "noAccount": "No account?",
+    "haveAccount": "Already have an account?",
+    "registerTitle": "Create account",
+    "chooseTitle": "What are you looking for?",
+    "chooseSubtitle": "Each account is for one thing only. Empleo and Obras are separate platforms.",
+    "roles": {
+      "worker": {
+        "title": "I'm looking for work",
+        "text": "I'm a tradesperson, labourer, installer or site technician."
+      },
+      "employer": {
+        "title": "I'm looking for workers",
+        "text": "I'm a company hiring site staff."
+      },
+      "client": {
+        "title": "I need a company",
+        "text": "I want building or refurbishment work done."
+      },
+      "provider": {
+        "title": "I'm a building company",
+        "text": "I want to receive requests from clients."
+      }
+    },
+    "change": "Change",
+    "name": "Full name",
+    "contactName": "Your name (contact person)",
+    "companyName": "Company name",
+    "phone": "Mobile phone",
+    "trade": "Your main trade",
+    "categories": "What work you do",
+    "categoriesHint": "Choose at least one. You can change it later.",
+    "province": "Province",
+    "city": "Town",
+    "submitRegister": "Create my account",
+    "terms": "By creating the account you agree that your details are used to put workers and companies, or clients and companies, in touch, depending on your account.",
+    "welcome": "Welcome, {{name}}",
+    "country": "Country code",
+    "validation": {
+      "required": "This field is required.",
+      "email": "Enter a valid email.",
+      "phone": "Enter a valid phone number (at least 9 digits).",
+      "password": "At least 8 characters.",
+      "match": "The passwords don't match.",
+      "categories": "Choose at least one type of work."
+    }
+  },
+  "worker": {
+    "hello": "Hi, {{name}}",
+    "title": "Your applications",
+    "lead": "The offers you applied to and what the company has done.",
+    "empty": "You haven't applied to any offer yet.",
+    "browse": "Find jobs",
+    "withdraw": "Withdraw",
+    "withdrawConfirm": "Withdraw your application? The company will no longer see it.",
+    "completeTitle": "Complete your profile",
+    "completeText": "A short presentation and your years of experience make companies write to you sooner.",
+    "completeCta": "Complete profile",
+    "statsApplied": "Applications",
+    "statsShortlisted": "Shortlisted",
+    "statsChats": "Open chats",
+    "profile": {
+      "title": "Your worker profile",
+      "lead": "It's what companies see when you apply. Your phone and email are only seen by a company that unlocks your application.",
+      "trade": "Main trade",
+      "otherTrades": "Other trades",
+      "otherTradesHint": "Up to 5.",
+      "years": "Years of experience",
+      "headline": "Headline",
+      "headlinePlaceholder": "E.g.: Skilled bricklayer, face brick",
+      "bio": "About you",
+      "bioPlaceholder": "Which sites you've worked on, what you can do, when you can start.",
+      "bioHint": "Don't put your phone number here: it's hidden until the company unlocks your profile.",
+      "availability": "Availability",
+      "training": "Training and documents",
+      "tpc": "I have the Construction Professional Card (TPC)",
+      "prl": "Health and safety training (PRL)",
+      "license": "Driving licence",
+      "vehicle": "Own vehicle",
+      "permit": "Permit to work in Spain",
+      "travel": "I can travel to other provinces",
+      "languages": "Languages",
+      "visible": "Appear in the workers' directory",
+      "visibleHint": "Companies will be able to find you and write to you even if you haven't applied to their offer."
+    }
+  },
+  "availability": {
+    "immediate": "Immediate",
+    "two_weeks": "In 2 weeks",
+    "month": "In a month",
+    "employed": "Employed, open to offers"
+  },
+  "prl": {
+    "none": "No training",
+    "20h": "PRL 20 h",
+    "60h": "PRL 60 h",
+    "300h": "PRL 300 h (advanced basic level)"
+  },
+  "appStatus": {
+    "new": "New",
+    "seen": "Seen by the company",
+    "shortlisted": "Shortlisted",
+    "rejected": "Not selected",
+    "hired": "Hired"
+  },
+  "employer": {
+    "hello": "Hi, {{name}}",
+    "title": "Your job posts",
+    "lead": "Post for free. Activate an offer to chat with its applicants.",
+    "new": "Post a job",
+    "empty": "You haven't posted any job yet.",
+    "emptyCta": "Post the first one",
+    "applicants_one": "{{count}} applicant",
+    "applicants_other": "{{count}} applicants",
+    "newApplicants_one": "{{count}} new",
+    "newApplicants_other": "{{count}} new",
+    "views_one": "{{count}} view",
+    "views_other": "{{count}} views",
+    "unlockedUntil": "Chat open until {{date}}",
+    "locked": "Chat locked",
+    "closed": "Closed",
+    "expired": "Expired",
+    "active": "Published",
+    "passActive": "Company plan active until {{date}}: all your offers are unlocked.",
+    "passUnlocked": "Unlocked by your Company plan",
+    "credits": "You have {{count}} directory contacts left.",
+    "seeApplicants": "See applicants",
+    "job": {
+      "edit": "Edit",
+      "close": "Close offer",
+      "reopen": "Publish again",
+      "public": "View as a worker",
+      "applicants": "Applicants",
+      "noApplicants": "Nobody has applied yet. Offers that show the pay get more applications.",
+      "lockedTitle_one": "{{count}} person has applied",
+      "lockedTitle_other": "{{count}} people have applied",
+      "lockedText": "Activate the offer to see each applicant's full name, phone and email, and write to them in the chat.",
+      "orPass": "Several offers? The Company plan unlocks all of them for 30 days.",
+      "unlockedBanner": "Offer activated: chat open with all its applicants until {{date}}.",
+      "shortlist": "Shortlist",
+      "reject": "Reject",
+      "hire": "Hired",
+      "openChat": "Chat",
+      "continueChat": "Open chat",
+      "lockedContact": "Contact locked",
+      "applied": "Applied {{when}}",
+      "lockedTitleNone": "Activate the offer to see the contact of everyone who applies and chat with them."
+    },
+    "form": {
+      "newTitle": "Post a job",
+      "editTitle": "Edit the job post",
+      "lead": "Free. It goes live in the search straight away, for 30 days.",
+      "title": "Job title",
+      "titlePlaceholder": "E.g.: Skilled bricklayer for a 40-home development",
+      "trade": "Trade",
+      "where": "Where",
+      "contract": "Contract",
+      "workday": "Hours",
+      "salary": "Gross pay",
+      "salaryMin": "From (€)",
+      "salaryMax": "Up to (€)",
+      "salaryPeriod": "Per",
+      "salaryHint": "Offers with pay get more applications. Leave it empty if it's to be agreed.",
+      "start": "Start",
+      "vacancies": "Positions",
+      "experience": "Minimum years of experience",
+      "description": "Description",
+      "descriptionPlaceholder": "The site, the tasks, the hours, the team.",
+      "requirements": "Requirements",
+      "requirementsPlaceholder": "One per line.",
+      "requiresTpc": "TPC card required",
+      "requiresLicense": "Driving licence required",
+      "accommodation": "Accommodation for those travelling",
+      "publish": "Post job",
+      "save": "Save changes"
+    },
+    "profile": {
+      "title": "Your company",
+      "lead": "It's what workers see on each offer.",
+      "name": "Company name",
+      "cif": "Tax ID (CIF)",
+      "sector": "Activity",
+      "size": "Size",
+      "description": "About the company",
+      "website": "Website"
+    },
+    "workers": {
+      "title": "Workers' directory",
+      "lead": "Workers who chose to appear here. Searching is free; writing to someone new uses one contact.",
+      "contact": "Contact",
+      "contactCost": "1 contact",
+      "available": "Availability: {{value}}",
+      "minYears": "Minimum experience",
+      "onlyTpc": "Only with TPC card",
+      "empty": "No workers match these filters.",
+      "noCredits": "You have no contacts left",
+      "noCreditsText": "Buy a pack or the Company plan to write to workers in the directory."
+    }
+  },
+  "sector": {
+    "obra_nueva": "New build",
+    "reformas": "Refurbishment and renovation",
+    "obra_civil": "Civil engineering",
+    "instalaciones": "Building services",
+    "ett": "Temporary staffing agency",
+    "otros": "Other"
+  },
+  "size": {
+    "1-9": "1 to 9 people",
+    "10-49": "10 to 49 people",
+    "50-249": "50 to 249 people",
+    "250+": "250 or more"
+  },
+  "contract": {
+    "indefinido": "Permanent",
+    "fijo_obra": "Permanent for the project",
+    "temporal": "Temporary",
+    "fijo_discontinuo": "Seasonal permanent",
+    "autonomo": "Self-employed / subcontract",
+    "practicas": "Internship"
+  },
+  "workday": {
+    "completa": "Full time",
+    "parcial": "Part time"
+  },
+  "period": {
+    "hora": "/hour",
+    "dia": "/day",
+    "mes": "/month",
+    "ano": "/year"
+  },
+  "periodName": {
+    "hora": "Hour",
+    "dia": "Day",
+    "mes": "Month",
+    "ano": "Year"
+  },
+  "start": {
+    "inmediata": "Immediate",
+    "15_dias": "In 2 weeks",
+    "1_mes": "In a month",
+    "a_convenir": "To be agreed"
+  },
+  "tradeGroups": {
+    "estructura": "Structure",
+    "albanileria": "Masonry and plastering",
+    "instalaciones": "Building services",
+    "acabados": "Carpentry and finishes",
+    "cubiertas": "Roofs, facades and work at height",
+    "maquinaria": "Machinery and transport",
+    "tecnicos": "Technical and site management"
+  },
+  "trades": {
+    "encofrador": "Formwork carpenter",
+    "ferrallista": "Steel fixer",
+    "hormigonero": "Concrete worker",
+    "montador_estructuras": "Structural erector",
+    "soldador": "Welder",
+    "peon": "Labourer",
+    "albanil": "Bricklayer",
+    "oficial_primera": "Skilled tradesperson (1st grade)",
+    "oficial_segunda": "Tradesperson (2nd grade)",
+    "yesero": "Plasterer",
+    "escayolista": "Ceiling plasterer",
+    "alicatador": "Wall tiler",
+    "solador": "Floor tiler",
+    "pladur": "Drywall installer",
+    "electricista": "Electrician",
+    "fontanero": "Plumber",
+    "climatizacion": "HVAC technician",
+    "gas": "Gas fitter",
+    "telecomunicaciones": "Telecoms installer",
+    "energia_solar": "Solar PV installer",
+    "ascensores": "Lift technician",
+    "pintor": "Painter",
+    "carpintero": "Carpenter",
+    "carpintero_metalico": "Metal fabricator",
+    "cerrajero": "Locksmith / metalworker",
+    "cristalero": "Glazier",
+    "parquetista": "Wood floor fitter",
+    "marmolista": "Stonemason",
+    "impermeabilizador": "Waterproofer",
+    "tejador": "Roofer",
+    "fachadista": "Facade installer",
+    "montador_andamios": "Scaffolder",
+    "trabajos_vertical": "Rope access technician",
+    "gruista": "Crane operator",
+    "operador_maquinaria": "Plant operator",
+    "conductor_camion": "Lorry driver",
+    "demoliciones": "Demolition operative",
+    "jefe_obra": "Site manager",
+    "encargado": "Site foreman",
+    "arquitecto_tecnico": "Building surveyor",
+    "topografo": "Land surveyor",
+    "delineante": "Draughtsperson",
+    "tecnico_prl": "Health and safety officer",
+    "ingeniero": "Engineer",
+    "administrativo_obra": "Site administrator"
+  },
+  "client": {
+    "title": "Your requests",
+    "lead": "Each request is seen by companies in that trade in your province. {{max}} contact you at most.",
+    "new": "New request",
+    "empty": "You haven't asked for any quote yet.",
+    "emptyCta": "Describe my project",
+    "interested_one": "{{count}} of {{max}} companies has contacted you",
+    "interested_other": "{{count}} of {{max}} companies have contacted you",
+    "open": "Open",
+    "closed": "Closed",
+    "close": "Close the request",
+    "closeConfirm": "Close the request? No more companies will be able to contact you about it.",
+    "companiesTitle": "Companies that contacted you",
+    "noCompanies": "None yet. We'll email you as soon as a company is interested.",
+    "openChat": "Open chat",
+    "form": {
+      "title": "Describe your project",
+      "lead": "Free, no strings attached. Your phone is only seen by the companies that contact you.",
+      "what": "Title",
+      "whatPlaceholder": "E.g.: Refurbish a 12 m² kitchen",
+      "category": "Type of work",
+      "description": "Description",
+      "descriptionPlaceholder": "What you want done, current condition, rough measurements, materials you like…",
+      "propertyType": "Type of property",
+      "budget": "Rough budget",
+      "timing": "When?",
+      "postalCode": "Postcode",
+      "submit": "Publish request",
+      "save": "Save changes"
+    }
+  },
+  "category": {
+    "reforma_integral": "Full refurbishment",
+    "reforma_cocina": "Kitchen refurbishment",
+    "reforma_bano": "Bathroom refurbishment",
+    "obra_nueva": "New build",
+    "ampliacion": "Extension",
+    "rehabilitacion_fachada": "Facade restoration",
+    "cubiertas_tejados": "Roofs",
+    "impermeabilizacion": "Waterproofing",
+    "electricidad": "Electrics",
+    "fontaneria": "Plumbing",
+    "climatizacion": "Air conditioning and heat pumps",
+    "energia_solar": "Solar panels",
+    "pintura": "Painting",
+    "carpinteria": "Carpentry and windows",
+    "suelos": "Flooring",
+    "pladur": "Drywall and ceilings",
+    "piscinas": "Swimming pools",
+    "demoliciones": "Demolition",
+    "cerramientos": "Enclosures and fences",
+    "otros": "Other work"
+  },
+  "property": {
+    "piso": "Flat",
+    "casa": "House",
+    "local": "Shop / premises",
+    "nave": "Warehouse",
+    "edificio": "Building",
+    "solar": "Plot"
+  },
+  "timing": {
+    "urgente": "Urgent",
+    "1_3_meses": "In 1 to 3 months",
+    "3_6_meses": "In 3 to 6 months",
+    "flexible": "No rush"
+  },
+  "budget": {
+    "hasta_3k": "Up to €3,000",
+    "3k_10k": "€3,000 – €10,000",
+    "10k_30k": "€10,000 – €30,000",
+    "30k_100k": "€30,000 – €100,000",
+    "mas_100k": "Over €100,000",
+    "sin_definir": "Not defined"
+  },
+  "provider": {
+    "title": "Client requests",
+    "lead": "Read each request for free. Unlock it to see the client's phone and write to them.",
+    "matching": "My trades and provinces",
+    "everything": "All",
+    "category": "Type of work",
+    "empty": "No open requests match these filters.",
+    "emptyMatching": "No requests for your trades and provinces right now. Widen your area in your profile or see all.",
+    "cost_one": "{{count}} credit",
+    "cost_other": "{{count}} credits",
+    "slots": "{{count}} of {{max}} companies",
+    "full": "Full",
+    "unlocked": "Unlocked",
+    "see": "See request",
+    "balance_one": "You have {{count}} credit",
+    "balance_other": "You have {{count}} credits",
+    "buy": "Buy credits",
+    "detail": {
+      "client": "The client",
+      "lockedText": "Unlock the request to see their name, phone and email, and write to them.",
+      "unlock": "Unlock for {{cost}}",
+      "fullText": "This request has already reached {{max}} companies.",
+      "noCredits": "You don't have enough credits",
+      "noCreditsText": "This request costs {{cost}} and you have {{balance}}.",
+      "openChat": "Open chat",
+      "details": "Details",
+      "notFound": "This request is no longer available."
+    },
+    "unlockedTitle": "Your clients",
+    "unlockedLead": "The requests you've unlocked.",
+    "unlockedEmpty": "You haven't unlocked any request yet.",
+    "profile": {
+      "title": "Your company",
+      "lead": "Your trades and provinces decide which requests you see. The rest appears in the public directory.",
+      "categories": "What work you do",
+      "provinces": "Provinces you work in",
+      "founded": "Year founded",
+      "listed": "Appear in the public company directory"
+    }
+  },
+  "chat": {
+    "title": "Messages",
+    "empty": "You don't have any conversations yet.",
+    "emptyWorker": "When a company is interested in your application, the conversation will appear here.",
+    "emptyEmployer": "Open a chat from the applicants of an activated offer or from the directory.",
+    "emptyClient": "When a company unlocks your request, you'll be able to talk to them here.",
+    "emptyProvider": "Unlock a request to talk to the client.",
+    "pick": "Choose a conversation.",
+    "placeholder": "Write a message…",
+    "send": "Send",
+    "you": "You",
+    "about": "About: {{title}}",
+    "started": "Conversation opened on {{date}}",
+    "notFound": "This conversation doesn't exist.",
+    "back": "Conversations"
+  },
+  "billing": {
+    "titleEmployer": "Plan and payments",
+    "titleProvider": "Credits",
+    "leadEmployer": "Activate offers, get the Company plan or buy contacts for the directory.",
+    "leadProvider": "Each request costs 1 to 4 credits depending on the size of the job.",
+    "balance": "Balance",
+    "pass": "Company plan",
+    "passUntil": "Active until {{date}}",
+    "passNone": "No active plan",
+    "orders": "Payments",
+    "noOrders": "You haven't made any payment yet.",
+    "movements": "Credit history",
+    "noMovements": "No movements.",
+    "reason": {
+      "purchase": "Purchase",
+      "contact": "Directory contact",
+      "unlock": "Request unlocked",
+      "grant": "Gift from Construye"
+    },
+    "status": {
+      "pending": "Pending",
+      "paid": "Paid",
+      "cancelled": "Cancelled"
+    },
+    "chooseOffer": "Choose the offer",
+    "chooseOfferHint": "Active and Premium apply to one specific offer.",
+    "noOffers": "Post an offer to be able to activate it.",
+    "unavailable": "Payments are not available right now.",
+    "redirecting": "Taking you to the payment page…",
+    "table": {
+      "date": "Date",
+      "product": "Product",
+      "amount": "Amount",
+      "status": "Status"
+    }
+  },
+  "payment": {
+    "simTitle": "Demo payment",
+    "simText": "Stripe isn't set up in this environment yet. In production, this step is Stripe's secure payment page.",
+    "simButton": "Simulate a successful payment",
+    "base": "Taxable base",
+    "vat": "VAT ({{rate}} %)",
+    "total": "Total",
+    "okTitle": "Payment received",
+    "okText": "You now have what you bought.",
+    "waiting": "Waiting for the payment confirmation…",
+    "cancelTitle": "Payment cancelled",
+    "cancelText": "Nothing was charged. You can try again whenever you want.",
+    "continue": "Continue",
+    "notFound": "This payment doesn't exist."
+  },
+  "account": {
+    "title": "My account",
+    "lead": "Your contact details. Your phone is only seen by whoever has unlocked your contact.",
+    "language": "Language",
+    "type": "Account type: {{role}}"
+  },
+  "roles": {
+    "worker": "Worker",
+    "employer": "Hiring company",
+    "client": "Homeowner",
+    "provider": "Building company",
+    "admin": "Admin"
+  },
+  "paywall": {
+    "unlock": "Unlock",
+    "locked": "Locked",
+    "hiddenPhone": "+34 6•• ••• •••",
+    "hiddenEmail": "••••••@••••.es"
+  },
+  "admin": {
+    "title": "Admin",
+    "tabs": {
+      "overview": "Overview",
+      "users": "Accounts",
+      "orders": "Payments",
+      "jobs": "Job posts",
+      "projects": "Requests"
+    },
+    "revenue": "Revenue",
+    "revenueMonth": "This month",
+    "jobsLive": "Published job posts",
+    "jobsUnlocked": "Activated job posts",
+    "applications": "Applications",
+    "applicationsMonth": "Applications this month",
+    "projectsOpen": "Open requests",
+    "projectUnlocks": "Unlocked requests",
+    "byProduct": "By product",
+    "block": "Block",
+    "unblock": "Unblock",
+    "blocked": "Blocked",
+    "grant": "Gift credits",
+    "grantPrompt": "How many credits?",
+    "close": "Close",
+    "searchUsers": "Name or email",
+    "name": "Name",
+    "role": "Type",
+    "createdAt": "Joined",
+    "user": "Account",
+    "jobTitle": "Title",
+    "status": "Status",
+    "applicants": "Applicants"
+  },
+  "notFound": {
+    "title": "This page doesn't exist",
+    "text": "The link may be wrong, or the page is gone.",
+    "home": "Back to home"
+  },
+  "forbidden": {
+    "title": "This section isn't for your account",
+    "text": "You're signed in as {{role}}. Empleo and Obras use separate accounts."
+  }
+}

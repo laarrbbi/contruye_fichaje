@@ -1,0 +1,936 @@
+{
+  "app": {
+    "name": "Construye Fichaje",
+    "tagline": "Empleo y obras en la construcción, en España."
+  },
+  "common": {
+    "loading": "Cargando…",
+    "loadFailed": "No se ha podido cargar. Comprueba la conexión.",
+    "retry": "Reintentar",
+    "error": "Algo ha fallado. Inténtalo de nuevo.",
+    "save": "Guardar",
+    "saved": "Guardado",
+    "saving": "Guardando…",
+    "cancel": "Cancelar",
+    "close": "Cerrar",
+    "edit": "Editar",
+    "back": "Volver",
+    "next": "Siguiente",
+    "previous": "Anterior",
+    "seeAll": "Ver todo",
+    "search": "Buscar",
+    "all": "Todos",
+    "any": "Cualquiera",
+    "yes": "Sí",
+    "no": "No",
+    "or": "o",
+    "optional": "opcional",
+    "required": "Obligatorio",
+    "page": "Página {{page}} de {{last}}",
+    "results_one": "{{count}} resultado",
+    "results_other": "{{count}} resultados",
+    "vatIncluded": "IVA incluido",
+    "free": "Gratis",
+    "credits_one": "{{count}} crédito",
+    "credits_other": "{{count}} créditos",
+    "contacts_one": "{{count}} contacto",
+    "contacts_other": "{{count}} contactos",
+    "until": "hasta el {{date}}",
+    "years_one": "{{count}} año",
+    "years_other": "{{count}} años",
+    "province": "Provincia",
+    "city": "Localidad",
+    "allSpain": "Toda España",
+    "copy": "Copiar",
+    "call": "Llamar",
+    "whatsapp": "WhatsApp",
+    "email": "E-mail"
+  },
+  "nav": {
+    "main": "Navegación principal",
+    "home": "Inicio",
+    "empleo": "Empleo",
+    "obras": "Obras",
+    "jobs": "Ofertas de trabajo",
+    "forCompanies": "Para empresas",
+    "companies": "Empresas de obras",
+    "forProfessionals": "Para profesionales",
+    "login": "Entrar",
+    "register": "Crear cuenta",
+    "registerShort": "Registro",
+    "logout": "Cerrar sesión",
+    "account": "Mi cuenta",
+    "messages": "Mensajes",
+    "admin": "Administración",
+    "changeLanguage": "Cambiar idioma",
+    "worker": {
+      "home": "Mis candidaturas",
+      "profile": "Mi perfil",
+      "jobs": "Buscar ofertas"
+    },
+    "employer": {
+      "home": "Mis ofertas",
+      "workers": "Buscar trabajadores",
+      "billing": "Plan y pagos",
+      "profile": "Empresa"
+    },
+    "client": {
+      "home": "Mis solicitudes",
+      "new": "Nueva solicitud",
+      "companies": "Empresas"
+    },
+    "provider": {
+      "home": "Solicitudes",
+      "unlocked": "Mis clientes",
+      "billing": "Créditos",
+      "profile": "Empresa"
+    }
+  },
+  "brand": {
+    "empleo": "EMPLEO",
+    "obras": "OBRAS",
+    "fichaje": "FICHAJE"
+  },
+  "footer": {
+    "about": "Dos plataformas separadas para la construcción en España: Empleo, para trabajar en obra y contratar personal; Obras, para encontrar una empresa que haga tu obra.",
+    "empleo": "Empleo",
+    "obras": "Obras",
+    "account": "Cuenta",
+    "copyright": "© {{year}} Construye Fichaje",
+    "credits": "Vídeo y fotos de ilustración: Pexels y Pixabay (licencia libre). Ninguna imagen muestra una obra de una empresa de la plataforma."
+  },
+  "home": {
+    "eyebrow": "Construcción · España",
+    "title": "La construcción, en un solo sitio.",
+    "lead": "Dos plataformas separadas, cada una con sus cuentas. Entra en la que necesitas.",
+    "empleo": {
+      "label": "Construye Empleo",
+      "title": "Trabajo en obra y personal para tu empresa",
+      "text": "Oficiales, peones, instaladores y técnicos, con las empresas que los contratan.",
+      "worker": "Trabajadores: perfil en dos minutos, inscríbete con un toque. Siempre gratis.",
+      "employer": "Empresas: publica gratis, recibe candidatos y desbloquea el chat.",
+      "cta": "Entrar en Empleo"
+    },
+    "obras": {
+      "label": "Construye Obras",
+      "title": "Una empresa para tu obra o tu reforma",
+      "text": "Cuenta lo que necesitas y recibe la llamada de empresas de tu zona.",
+      "client": "Particulares: describe tu obra gratis; te contactan hasta {{max}} empresas.",
+      "provider": "Empresas: solicitudes de tus oficios y tu zona; pagas solo las que quieres.",
+      "cta": "Entrar en Obras"
+    },
+    "separate": "Empleo y Obras no se mezclan: una cuenta de Empleo no ve nada de Obras, y al revés."
+  },
+  "empleo": {
+    "eyebrow": "Construye Empleo",
+    "title": "Trabajo en la obra, sin vueltas.",
+    "lead": "Ofertas de empresas de construcción de toda España. Crea tu perfil una vez, apúntate a cualquier oferta con un toque y habla con la empresa por el chat.",
+    "searchTrade": "Oficio",
+    "searchProvince": "Provincia",
+    "searchButton": "Buscar ofertas",
+    "employerCta": "Soy empresa: publicar gratis",
+    "howTitle": "Cómo funciona",
+    "forWorkers": "Para trabajadores",
+    "forEmployers": "Para empresas",
+    "workerSteps": {
+      "1": {
+        "title": "Tu perfil es tu currículum",
+        "text": "Oficio, años de experiencia, TPC, PRL y carné. Dos minutos, desde el móvil."
+      },
+      "2": {
+        "title": "Inscríbete con un toque",
+        "text": "Ves una oferta que te interesa y te apuntas. Sin cartas ni formularios."
+      },
+      "3": {
+        "title": "La empresa te escribe",
+        "text": "Cuando le interesas, te abre un chat. Te avisamos por e-mail."
+      }
+    },
+    "employerSteps": {
+      "1": {
+        "title": "Publica gratis",
+        "text": "Oficio, zona, contrato y sueldo. Tu oferta sale al momento."
+      },
+      "2": {
+        "title": "Recibe candidaturas",
+        "text": "Ves quién se apunta: oficio, experiencia, formación y zona."
+      },
+      "3": {
+        "title": "Desbloquea y chatea",
+        "text": "Activa la oferta para ver el teléfono y chatear con todos sus candidatos."
+      }
+    },
+    "latest": "Ofertas recientes",
+    "trades": "Por oficio",
+    "companyBand": {
+      "title": "¿Necesitas personal para tu obra?",
+      "text": "Publicar es gratis. Para chatear con los candidatos, activa la oferta desde {{price}}.",
+      "cta": "Ver planes para empresas"
+    },
+    "noLatest": "Todavía no hay ofertas publicadas."
+  },
+  "jobs": {
+    "title": "Ofertas de trabajo en la construcción",
+    "lead": "Todas las ofertas publicadas, las destacadas primero.",
+    "searchPlaceholder": "Puesto, obra o localidad",
+    "trade": "Oficio",
+    "contract": "Contrato",
+    "empty": "No hay ofertas con estos filtros.",
+    "clear": "Quitar filtros",
+    "featured": "Destacada",
+    "applied": "Inscrito",
+    "published": "Publicada {{when}}",
+    "vacancies_one": "{{count}} puesto",
+    "vacancies_other": "{{count}} puestos",
+    "salaryUndisclosed": "Sueldo a convenir",
+    "salaryRange": "{{min}} – {{max}} {{period}}",
+    "salaryFrom": "Desde {{min}} {{period}}",
+    "salaryUpTo": "Hasta {{max}} {{period}}",
+    "tpc": "TPC",
+    "license": "Carné de conducir",
+    "accommodation": "Alojamiento",
+    "experience": "Experiencia mínima",
+    "noExperience": "Sin experiencia",
+    "start": "Incorporación",
+    "workday": "Jornada",
+    "description": "La oferta",
+    "requirements": "Requisitos",
+    "aboutCompany": "La empresa",
+    "apply": {
+      "title": "Inscribirme en esta oferta",
+      "button": "Inscribirme",
+      "messageLabel": "Un mensaje para la empresa",
+      "messageHint": "Opcional. Por ejemplo, cuándo puedes empezar.",
+      "done": "Estás inscrito",
+      "doneText": "La empresa ya ve tu perfil. Si le interesas, te escribirá por el chat.",
+      "guest": "Crea tu perfil gratis para inscribirte",
+      "guestText": "Sin currículum: tu perfil de trabajador es lo que ve la empresa.",
+      "login": "Ya tengo cuenta",
+      "notWorker": "Las inscripciones son para cuentas de trabajador.",
+      "own": "Es tu oferta.",
+      "manage": "Ver candidatos",
+      "closed": "Esta oferta ya no admite candidaturas.",
+      "status": "Estado: {{status}}",
+      "openChat": "Abrir el chat"
+    },
+    "notFound": "Esta oferta no existe o ya no está publicada.",
+    "backToBoard": "Volver a las ofertas"
+  },
+  "employerPricing": {
+    "eyebrow": "Para empresas",
+    "title": "Personal para tu obra, esta semana.",
+    "lead": "Publica tu oferta gratis y mira quién se apunta. Pagas solo cuando quieres hablar con los candidatos.",
+    "steps": {
+      "1": {
+        "title": "Publica gratis",
+        "text": "Tu oferta sale en el buscador durante 30 días."
+      },
+      "2": {
+        "title": "Mira los candidatos",
+        "text": "Oficio, experiencia, TPC, PRL y zona de cada persona inscrita."
+      },
+      "3": {
+        "title": "Desbloquea el chat",
+        "text": "Con la oferta activada ves su teléfono y su e-mail y les escribes."
+      }
+    },
+    "plansTitle": "Planes",
+    "free": {
+      "name": "Básica",
+      "text": "Publica y recibe candidaturas.",
+      "features": [
+        "Oferta publicada 30 días",
+        "Candidaturas ilimitadas",
+        "Perfil resumido de cada candidato"
+      ]
+    },
+    "cta": "Publicar una oferta gratis",
+    "ctaLogged": "Ir a mis ofertas",
+    "faqTitle": "Preguntas frecuentes",
+    "faq": {
+      "1": {
+        "q": "¿Qué veo sin pagar?",
+        "a": "Cuántas personas se han inscrito y el perfil de cada una: oficio, años de experiencia, formación en PRL, TPC, carné y zona. El nombre completo, el teléfono, el e-mail y el chat se desbloquean al activar la oferta."
+      },
+      "2": {
+        "q": "¿Es una suscripción?",
+        "a": "No. Cada pago es único: una oferta activada 30 días, un plan de 30 días o un pack de contactos. No se renueva solo."
+      },
+      "3": {
+        "q": "¿Qué son los contactos?",
+        "a": "Sirven para escribir a trabajadores del directorio que no se han inscrito en tu oferta. Cada trabajador nuevo que contactas gasta uno; volver a escribirle no gasta nada."
+      },
+      "4": {
+        "q": "¿Y si el trabajador no contesta?",
+        "a": "El chat queda abierto con todos los candidatos de la oferta mientras dure la activación, y la conversación se conserva después."
+      }
+    }
+  },
+  "products": {
+    "offer_active": {
+      "name": "Oferta Activa",
+      "text": "Chat y contacto con todos los candidatos de una oferta.",
+      "features": [
+        "Teléfono y e-mail de cada candidato",
+        "Chat con todos los inscritos",
+        "30 días"
+      ]
+    },
+    "offer_premium": {
+      "name": "Oferta Premium",
+      "text": "Todo lo de Activa, y tu oferta arriba del buscador.",
+      "features": [
+        "Todo lo de Oferta Activa",
+        "Destacada arriba del buscador",
+        "Sello «Destacada»",
+        "30 días"
+      ]
+    },
+    "employer_pass": {
+      "name": "Plan Empresa",
+      "text": "Todas tus ofertas desbloqueadas durante 30 días.",
+      "features": [
+        "Todas tus ofertas desbloqueadas",
+        "{{credits}} contactos del directorio",
+        "30 días"
+      ]
+    },
+    "contacts_10": {
+      "name": "Pack de contactos",
+      "text": "Escribe a trabajadores del directorio.",
+      "features": [
+        "{{credits}} trabajadores nuevos",
+        "Sin caducidad"
+      ]
+    },
+    "leads_5": {
+      "name": "Pack Inicio",
+      "text": "Para probar con unas pocas solicitudes.",
+      "features": [
+        "{{credits}} créditos",
+        "Sin caducidad"
+      ]
+    },
+    "leads_15": {
+      "name": "Pack Obra",
+      "text": "Para una empresa que presupuesta cada semana.",
+      "features": [
+        "{{credits}} créditos",
+        "Sin caducidad"
+      ]
+    },
+    "leads_40": {
+      "name": "Pack Constructora",
+      "text": "Para equipos comerciales.",
+      "features": [
+        "{{credits}} créditos",
+        "Sin caducidad"
+      ]
+    },
+    "perOffer": "por oferta",
+    "per30": "30 días",
+    "oneTime": "pago único",
+    "buy": "Comprar",
+    "activate": "Activar",
+    "popular": "La más elegida"
+  },
+  "obras": {
+    "eyebrow": "Construye Obras",
+    "title": "Tu obra, en manos de una empresa de verdad.",
+    "lead": "Cuenta qué necesitas: una reforma, un tejado, una casa nueva. Hasta {{max}} empresas de tu zona te llaman con su presupuesto. Gratis y sin compromiso.",
+    "cta": "Pedir presupuestos gratis",
+    "ctaCompanies": "Ver empresas",
+    "howTitle": "Cómo funciona",
+    "steps": {
+      "1": {
+        "title": "Describe tu obra",
+        "text": "Qué quieres hacer, dónde, para cuándo y tu presupuesto aproximado."
+      },
+      "2": {
+        "title": "Las empresas la ven",
+        "text": "Solo empresas de ese oficio que trabajan en tu provincia."
+      },
+      "3": {
+        "title": "Te contactan hasta {{max}}",
+        "text": "Hablas con ellas por el chat o por teléfono y eliges. No hay más llamadas."
+      }
+    },
+    "categoriesTitle": "Qué puedes pedir",
+    "providerBand": {
+      "title": "¿Tienes una empresa de obras o reformas?",
+      "text": "Recibe solicitudes de clientes de tu zona. Sin cuota: pagas solo las que quieres, con créditos.",
+      "cta": "Ver cómo funciona"
+    },
+    "privacy": "Tu teléfono solo lo ven las empresas que desbloquean tu solicitud, y son {{max}} como mucho."
+  },
+  "providerPricing": {
+    "eyebrow": "Para empresas de obras y reformas",
+    "title": "Clientes que ya quieren hacer la obra.",
+    "lead": "Ves las solicitudes de tus oficios y tu provincia antes de pagar nada. Si una te interesa, la desbloqueas con créditos y tienes el teléfono del cliente.",
+    "costTitle": "Lo que cuesta una solicitud",
+    "costText": "Depende del tamaño de la obra. Cada solicitud la desbloquean {{max}} empresas como máximo.",
+    "cta": "Registrar mi empresa",
+    "ctaLogged": "Ver solicitudes",
+    "packsTitle": "Packs de créditos"
+  },
+  "companies": {
+    "title": "Empresas de obras y reformas",
+    "lead": "Empresas que trabajan con Construye Obras. Para que te llamen, publica tu solicitud: les llega a las de tu oficio y tu zona.",
+    "category": "Especialidad",
+    "empty": "No hay empresas con estos filtros todavía.",
+    "since": "Desde {{year}}",
+    "cta": "Publicar mi solicitud"
+  },
+  "auth": {
+    "tagline": "La obra se hace con gente. Aquí se encuentran.",
+    "loginTitle": "Entrar",
+    "loginSubtitle": "Con el e-mail de tu cuenta.",
+    "email": "E-mail",
+    "password": "Contraseña",
+    "passwordConfirm": "Repite la contraseña",
+    "showPassword": "Mostrar la contraseña",
+    "hidePassword": "Ocultar la contraseña",
+    "submitLogin": "Entrar",
+    "invalid": "El e-mail o la contraseña no son correctos.",
+    "noAccount": "¿No tienes cuenta?",
+    "haveAccount": "¿Ya tienes cuenta?",
+    "registerTitle": "Crear cuenta",
+    "chooseTitle": "¿Qué buscas?",
+    "chooseSubtitle": "Cada cuenta es para una sola cosa. Empleo y Obras son plataformas separadas.",
+    "roles": {
+      "worker": {
+        "title": "Busco trabajo",
+        "text": "Soy oficial, peón, instalador o técnico de obra."
+      },
+      "employer": {
+        "title": "Busco trabajadores",
+        "text": "Soy una empresa que contrata personal de obra."
+      },
+      "client": {
+        "title": "Necesito una empresa",
+        "text": "Quiero hacer una obra o una reforma."
+      },
+      "provider": {
+        "title": "Soy una empresa de obras",
+        "text": "Quiero recibir solicitudes de clientes."
+      }
+    },
+    "change": "Cambiar",
+    "name": "Nombre y apellidos",
+    "contactName": "Tu nombre (persona de contacto)",
+    "companyName": "Nombre de la empresa",
+    "phone": "Teléfono móvil",
+    "trade": "Tu oficio principal",
+    "categories": "Qué trabajos hacéis",
+    "categoriesHint": "Elige al menos uno. Podrás cambiarlo después.",
+    "province": "Provincia",
+    "city": "Localidad",
+    "submitRegister": "Crear mi cuenta",
+    "terms": "Al crear la cuenta aceptas que tus datos se usen para poner en contacto a trabajadores y empresas, o a clientes y empresas, según tu cuenta.",
+    "welcome": "Bienvenido, {{name}}",
+    "validation": {
+      "required": "Este campo es obligatorio.",
+      "email": "Escribe un e-mail válido.",
+      "phone": "Escribe un teléfono válido (9 cifras como mínimo).",
+      "password": "Mínimo 8 caracteres.",
+      "match": "Las contraseñas no coinciden.",
+      "categories": "Elige al menos un tipo de trabajo."
+    },
+    "country": "Prefijo del país"
+  },
+  "worker": {
+    "hello": "Hola, {{name}}",
+    "title": "Tus candidaturas",
+    "lead": "Las ofertas en las que te has inscrito y lo que ha hecho la empresa.",
+    "empty": "Aún no te has inscrito en ninguna oferta.",
+    "browse": "Buscar ofertas",
+    "withdraw": "Retirar",
+    "withdrawConfirm": "¿Retirar tu candidatura? La empresa dejará de verla.",
+    "completeTitle": "Completa tu perfil",
+    "completeText": "Una presentación y tus años de experiencia hacen que las empresas te escriban antes.",
+    "completeCta": "Completar perfil",
+    "statsApplied": "Inscripciones",
+    "statsShortlisted": "Preseleccionado",
+    "statsChats": "Chats abiertos",
+    "profile": {
+      "title": "Tu perfil de trabajador",
+      "lead": "Es lo que ven las empresas cuando te inscribes. Tu teléfono y tu e-mail solo los ve una empresa que desbloquea tu candidatura.",
+      "trade": "Oficio principal",
+      "otherTrades": "Otros oficios",
+      "otherTradesHint": "Hasta 5.",
+      "years": "Años de experiencia",
+      "headline": "Titular",
+      "headlinePlaceholder": "Ej.: Oficial de primera, ladrillo cara vista",
+      "bio": "Presentación",
+      "bioPlaceholder": "Qué obras has hecho, qué sabes hacer, cuándo puedes empezar.",
+      "bioHint": "No pongas aquí tu teléfono: se oculta hasta que la empresa desbloquea tu perfil.",
+      "availability": "Disponibilidad",
+      "training": "Formación y documentación",
+      "tpc": "Tengo la Tarjeta Profesional de la Construcción (TPC)",
+      "prl": "Formación en PRL",
+      "license": "Carné de conducir",
+      "vehicle": "Vehículo propio",
+      "permit": "Permiso para trabajar en España",
+      "travel": "Puedo desplazarme a otras provincias",
+      "languages": "Idiomas",
+      "visible": "Aparecer en el directorio de trabajadores",
+      "visibleHint": "Las empresas podrán encontrarte y escribirte aunque no te hayas inscrito en su oferta."
+    }
+  },
+  "availability": {
+    "immediate": "Inmediata",
+    "two_weeks": "En 15 días",
+    "month": "En un mes",
+    "employed": "Trabajando, abierto a ofertas"
+  },
+  "prl": {
+    "none": "Sin formación",
+    "20h": "PRL 20 h",
+    "60h": "PRL 60 h",
+    "300h": "PRL 300 h (nivel básico avanzado)"
+  },
+  "appStatus": {
+    "new": "Nueva",
+    "seen": "Vista por la empresa",
+    "shortlisted": "Preseleccionado",
+    "rejected": "Descartado",
+    "hired": "Contratado"
+  },
+  "employer": {
+    "hello": "Hola, {{name}}",
+    "title": "Tus ofertas",
+    "lead": "Publica gratis. Activa una oferta para chatear con sus candidatos.",
+    "new": "Publicar oferta",
+    "empty": "Todavía no has publicado ninguna oferta.",
+    "emptyCta": "Publicar la primera",
+    "applicants_one": "{{count}} candidato",
+    "applicants_other": "{{count}} candidatos",
+    "newApplicants_one": "{{count}} nuevo",
+    "newApplicants_other": "{{count}} nuevos",
+    "views_one": "{{count}} visita",
+    "views_other": "{{count}} visitas",
+    "unlockedUntil": "Chat abierto hasta el {{date}}",
+    "locked": "Chat bloqueado",
+    "closed": "Cerrada",
+    "expired": "Caducada",
+    "active": "Publicada",
+    "passActive": "Plan Empresa activo hasta el {{date}}: todas tus ofertas están desbloqueadas.",
+    "credits": "Te quedan {{count}} contactos del directorio.",
+    "seeApplicants": "Ver candidatos",
+    "job": {
+      "edit": "Editar",
+      "close": "Cerrar oferta",
+      "reopen": "Volver a publicar",
+      "public": "Ver como trabajador",
+      "applicants": "Candidatos",
+      "noApplicants": "Aún no se ha inscrito nadie. Las ofertas con sueldo visible reciben más candidaturas.",
+      "lockedTitle_one": "{{count}} persona se ha inscrito",
+      "lockedTitle_other": "{{count}} personas se han inscrito",
+      "lockedText": "Activa la oferta para ver el nombre completo, el teléfono y el e-mail de cada candidato y escribirles por el chat.",
+      "orPass": "¿Varias ofertas? El Plan Empresa las desbloquea todas durante 30 días.",
+      "unlockedBanner": "Oferta activada: chat abierto con todos sus candidatos hasta el {{date}}.",
+      "shortlist": "Preseleccionar",
+      "reject": "Descartar",
+      "hire": "Contratado",
+      "openChat": "Chatear",
+      "continueChat": "Abrir chat",
+      "lockedContact": "Contacto bloqueado",
+      "applied": "Se inscribió {{when}}",
+      "lockedTitleNone": "Activa la oferta para ver el contacto de quien se inscriba y chatear con todos."
+    },
+    "form": {
+      "newTitle": "Publicar una oferta",
+      "editTitle": "Editar la oferta",
+      "lead": "Gratis. Sale en el buscador al momento y durante 30 días.",
+      "title": "Puesto",
+      "titlePlaceholder": "Ej.: Oficial de primera albañil para obra de 40 viviendas",
+      "trade": "Oficio",
+      "where": "Dónde",
+      "contract": "Contrato",
+      "workday": "Jornada",
+      "salary": "Sueldo bruto",
+      "salaryMin": "Desde (€)",
+      "salaryMax": "Hasta (€)",
+      "salaryPeriod": "Por",
+      "salaryHint": "Las ofertas con sueldo reciben más candidaturas. Déjalo vacío si es a convenir.",
+      "start": "Incorporación",
+      "vacancies": "Puestos",
+      "experience": "Años de experiencia mínimos",
+      "description": "Descripción",
+      "descriptionPlaceholder": "La obra, las tareas, el horario, el equipo.",
+      "requirements": "Requisitos",
+      "requirementsPlaceholder": "Uno por línea.",
+      "requiresTpc": "Se exige TPC",
+      "requiresLicense": "Se exige carné de conducir",
+      "accommodation": "Alojamiento para desplazados",
+      "publish": "Publicar oferta",
+      "save": "Guardar cambios"
+    },
+    "profile": {
+      "title": "Tu empresa",
+      "lead": "Es lo que ven los trabajadores en cada oferta.",
+      "name": "Nombre de la empresa",
+      "cif": "CIF",
+      "sector": "Actividad",
+      "size": "Tamaño",
+      "description": "Sobre la empresa",
+      "website": "Web"
+    },
+    "workers": {
+      "title": "Directorio de trabajadores",
+      "lead": "Trabajadores que han elegido aparecer aquí. Buscar es gratis; escribir a uno nuevo gasta un contacto.",
+      "contact": "Contactar",
+      "contactCost": "1 contacto",
+      "available": "Disponibilidad: {{value}}",
+      "minYears": "Experiencia mínima",
+      "onlyTpc": "Solo con TPC",
+      "empty": "No hay trabajadores con estos filtros.",
+      "noCredits": "No te quedan contactos",
+      "noCreditsText": "Compra un pack o el Plan Empresa para escribir a trabajadores del directorio."
+    },
+    "passUnlocked": "Desbloqueada por tu Plan Empresa"
+  },
+  "sector": {
+    "obra_nueva": "Obra nueva",
+    "reformas": "Reformas y rehabilitación",
+    "obra_civil": "Obra civil",
+    "instalaciones": "Instalaciones",
+    "ett": "Empresa de trabajo temporal",
+    "otros": "Otros"
+  },
+  "size": {
+    "1-9": "1 a 9 personas",
+    "10-49": "10 a 49 personas",
+    "50-249": "50 a 249 personas",
+    "250+": "250 o más"
+  },
+  "contract": {
+    "indefinido": "Indefinido",
+    "fijo_obra": "Fijo de obra",
+    "temporal": "Temporal",
+    "fijo_discontinuo": "Fijo discontinuo",
+    "autonomo": "Autónomo / subcontrata",
+    "practicas": "Prácticas"
+  },
+  "workday": {
+    "completa": "Jornada completa",
+    "parcial": "Jornada parcial"
+  },
+  "period": {
+    "hora": "/hora",
+    "dia": "/día",
+    "mes": "/mes",
+    "ano": "/año"
+  },
+  "periodName": {
+    "hora": "Hora",
+    "dia": "Día",
+    "mes": "Mes",
+    "ano": "Año"
+  },
+  "start": {
+    "inmediata": "Inmediata",
+    "15_dias": "En 15 días",
+    "1_mes": "En un mes",
+    "a_convenir": "A convenir"
+  },
+  "tradeGroups": {
+    "estructura": "Estructura",
+    "albanileria": "Albañilería y acabados de obra",
+    "instalaciones": "Instalaciones",
+    "acabados": "Carpintería y acabados",
+    "cubiertas": "Cubiertas, fachadas y altura",
+    "maquinaria": "Maquinaria y transporte",
+    "tecnicos": "Técnicos y mandos"
+  },
+  "trades": {
+    "encofrador": "Encofrador",
+    "ferrallista": "Ferrallista",
+    "hormigonero": "Hormigonero",
+    "montador_estructuras": "Montador de estructuras",
+    "soldador": "Soldador",
+    "peon": "Peón",
+    "albanil": "Albañil",
+    "oficial_primera": "Oficial de primera",
+    "oficial_segunda": "Oficial de segunda",
+    "yesero": "Yesero",
+    "escayolista": "Escayolista",
+    "alicatador": "Alicatador",
+    "solador": "Solador",
+    "pladur": "Instalador de pladur",
+    "electricista": "Electricista",
+    "fontanero": "Fontanero",
+    "climatizacion": "Técnico de climatización",
+    "gas": "Instalador de gas",
+    "telecomunicaciones": "Instalador de telecomunicaciones",
+    "energia_solar": "Instalador fotovoltaico",
+    "ascensores": "Técnico de ascensores",
+    "pintor": "Pintor",
+    "carpintero": "Carpintero",
+    "carpintero_metalico": "Carpintero metálico",
+    "cerrajero": "Cerrajero",
+    "cristalero": "Cristalero",
+    "parquetista": "Parquetista",
+    "marmolista": "Marmolista",
+    "impermeabilizador": "Impermeabilizador",
+    "tejador": "Tejador",
+    "fachadista": "Fachadista",
+    "montador_andamios": "Montador de andamios",
+    "trabajos_vertical": "Trabajos verticales",
+    "gruista": "Gruista",
+    "operador_maquinaria": "Operador de maquinaria",
+    "conductor_camion": "Conductor de camión",
+    "demoliciones": "Demoliciones",
+    "jefe_obra": "Jefe de obra",
+    "encargado": "Encargado de obra",
+    "arquitecto_tecnico": "Arquitecto técnico",
+    "topografo": "Topógrafo",
+    "delineante": "Delineante",
+    "tecnico_prl": "Técnico de PRL",
+    "ingeniero": "Ingeniero",
+    "administrativo_obra": "Administrativo de obra"
+  },
+  "client": {
+    "title": "Tus solicitudes",
+    "lead": "Cada solicitud la ven las empresas de ese oficio en tu provincia. Te contactan {{max}} como mucho.",
+    "new": "Nueva solicitud",
+    "empty": "Todavía no has pedido ningún presupuesto.",
+    "emptyCta": "Describir mi obra",
+    "interested_one": "{{count}} de {{max}} empresas te ha contactado",
+    "interested_other": "{{count}} de {{max}} empresas te han contactado",
+    "open": "Abierta",
+    "closed": "Cerrada",
+    "close": "Cerrar la solicitud",
+    "closeConfirm": "¿Cerrar la solicitud? Ninguna empresa más podrá contactarte por ella.",
+    "companiesTitle": "Empresas que te han contactado",
+    "noCompanies": "Todavía ninguna. Te avisaremos por e-mail en cuanto una empresa se interese.",
+    "openChat": "Abrir chat",
+    "form": {
+      "title": "Describe tu obra",
+      "lead": "Gratis y sin compromiso. Tu teléfono solo lo ven las empresas que te contactan.",
+      "what": "Título",
+      "whatPlaceholder": "Ej.: Reforma de cocina de 12 m²",
+      "category": "Tipo de trabajo",
+      "description": "Descripción",
+      "descriptionPlaceholder": "Qué quieres hacer, el estado actual, medidas aproximadas, materiales que te gustan…",
+      "propertyType": "Tipo de inmueble",
+      "budget": "Presupuesto aproximado",
+      "timing": "¿Para cuándo?",
+      "postalCode": "Código postal",
+      "submit": "Publicar solicitud",
+      "save": "Guardar cambios"
+    }
+  },
+  "category": {
+    "reforma_integral": "Reforma integral",
+    "reforma_cocina": "Reforma de cocina",
+    "reforma_bano": "Reforma de baño",
+    "obra_nueva": "Obra nueva",
+    "ampliacion": "Ampliación",
+    "rehabilitacion_fachada": "Rehabilitación de fachada",
+    "cubiertas_tejados": "Cubiertas y tejados",
+    "impermeabilizacion": "Impermeabilización",
+    "electricidad": "Electricidad",
+    "fontaneria": "Fontanería",
+    "climatizacion": "Climatización y aerotermia",
+    "energia_solar": "Placas solares",
+    "pintura": "Pintura",
+    "carpinteria": "Carpintería y ventanas",
+    "suelos": "Suelos",
+    "pladur": "Pladur y techos",
+    "piscinas": "Piscinas",
+    "demoliciones": "Demoliciones",
+    "cerramientos": "Cerramientos y vallas",
+    "otros": "Otros trabajos"
+  },
+  "property": {
+    "piso": "Piso",
+    "casa": "Casa",
+    "local": "Local",
+    "nave": "Nave",
+    "edificio": "Edificio",
+    "solar": "Solar"
+  },
+  "timing": {
+    "urgente": "Urgente",
+    "1_3_meses": "En 1 a 3 meses",
+    "3_6_meses": "En 3 a 6 meses",
+    "flexible": "Sin prisa"
+  },
+  "budget": {
+    "hasta_3k": "Hasta 3.000 €",
+    "3k_10k": "3.000 – 10.000 €",
+    "10k_30k": "10.000 – 30.000 €",
+    "30k_100k": "30.000 – 100.000 €",
+    "mas_100k": "Más de 100.000 €",
+    "sin_definir": "Sin definir"
+  },
+  "provider": {
+    "title": "Solicitudes de clientes",
+    "lead": "Lee cada solicitud gratis. Desbloquéala para ver el teléfono del cliente y escribirle.",
+    "matching": "De mis oficios y provincias",
+    "everything": "Todas",
+    "category": "Tipo de trabajo",
+    "empty": "No hay solicitudes abiertas con estos filtros.",
+    "emptyMatching": "No hay solicitudes de tus oficios y provincias ahora mismo. Amplía tu zona en el perfil o mira todas.",
+    "cost_one": "{{count}} crédito",
+    "cost_other": "{{count}} créditos",
+    "slots": "{{count}} de {{max}} empresas",
+    "full": "Completa",
+    "unlocked": "Desbloqueada",
+    "see": "Ver solicitud",
+    "balance_one": "Tienes {{count}} crédito",
+    "balance_other": "Tienes {{count}} créditos",
+    "buy": "Comprar créditos",
+    "detail": {
+      "client": "El cliente",
+      "lockedText": "Desbloquea la solicitud para ver su nombre, teléfono y e-mail, y escribirle.",
+      "unlock": "Desbloquear por {{cost}}",
+      "fullText": "Esta solicitud ya ha recibido a {{max}} empresas.",
+      "noCredits": "No tienes créditos suficientes",
+      "noCreditsText": "Esta solicitud cuesta {{cost}} y tienes {{balance}}.",
+      "openChat": "Abrir chat",
+      "details": "Detalles",
+      "notFound": "Esta solicitud ya no está disponible."
+    },
+    "unlockedTitle": "Tus clientes",
+    "unlockedLead": "Las solicitudes que has desbloqueado.",
+    "unlockedEmpty": "Todavía no has desbloqueado ninguna solicitud.",
+    "profile": {
+      "title": "Tu empresa",
+      "lead": "Tus oficios y provincias deciden qué solicitudes ves. Lo demás aparece en el directorio público.",
+      "categories": "Qué trabajos hacéis",
+      "provinces": "Provincias en las que trabajáis",
+      "founded": "Año de fundación",
+      "listed": "Aparecer en el directorio público de empresas"
+    }
+  },
+  "chat": {
+    "title": "Mensajes",
+    "empty": "No tienes conversaciones todavía.",
+    "emptyWorker": "Cuando una empresa se interese por tu candidatura, la conversación aparecerá aquí.",
+    "emptyEmployer": "Abre un chat desde los candidatos de una oferta activada o desde el directorio.",
+    "emptyClient": "Cuando una empresa desbloquee tu solicitud, podrás hablar con ella aquí.",
+    "emptyProvider": "Desbloquea una solicitud para hablar con el cliente.",
+    "pick": "Elige una conversación.",
+    "placeholder": "Escribe un mensaje…",
+    "send": "Enviar",
+    "you": "Tú",
+    "about": "Sobre: {{title}}",
+    "started": "Conversación abierta el {{date}}",
+    "notFound": "Esta conversación no existe.",
+    "back": "Conversaciones"
+  },
+  "billing": {
+    "titleEmployer": "Plan y pagos",
+    "titleProvider": "Créditos",
+    "leadEmployer": "Activa ofertas, el Plan Empresa o compra contactos para el directorio.",
+    "leadProvider": "Cada solicitud cuesta de 1 a 4 créditos según el tamaño de la obra.",
+    "balance": "Saldo",
+    "pass": "Plan Empresa",
+    "passUntil": "Activo hasta el {{date}}",
+    "passNone": "Sin plan activo",
+    "orders": "Pagos",
+    "noOrders": "Todavía no has hecho ningún pago.",
+    "movements": "Movimientos de créditos",
+    "noMovements": "Sin movimientos.",
+    "reason": {
+      "purchase": "Compra",
+      "contact": "Contacto del directorio",
+      "unlock": "Solicitud desbloqueada",
+      "grant": "Regalo de Construye"
+    },
+    "status": {
+      "pending": "Pendiente",
+      "paid": "Pagado",
+      "cancelled": "Cancelado"
+    },
+    "chooseOffer": "Elige la oferta",
+    "chooseOfferHint": "La Oferta Activa y la Premium se aplican a una oferta concreta.",
+    "noOffers": "Publica una oferta para poder activarla.",
+    "unavailable": "Los pagos no están disponibles en este momento.",
+    "redirecting": "Te llevamos a la página de pago…",
+    "table": {
+      "date": "Fecha",
+      "product": "Producto",
+      "amount": "Importe",
+      "status": "Estado"
+    }
+  },
+  "payment": {
+    "simTitle": "Pago de demostración",
+    "simText": "Stripe todavía no está configurado en este entorno. En producción, este paso es la página de pago segura de Stripe.",
+    "simButton": "Simular pago correcto",
+    "base": "Base imponible",
+    "vat": "IVA ({{rate}} %)",
+    "total": "Total",
+    "okTitle": "Pago recibido",
+    "okText": "Ya tienes lo que has comprado.",
+    "waiting": "Esperando la confirmación del pago…",
+    "cancelTitle": "Pago cancelado",
+    "cancelText": "No se ha cobrado nada. Puedes intentarlo de nuevo cuando quieras.",
+    "continue": "Continuar",
+    "notFound": "Este pago no existe."
+  },
+  "account": {
+    "title": "Mi cuenta",
+    "lead": "Tus datos de contacto. El teléfono solo lo ve quien ha desbloqueado tu contacto.",
+    "language": "Idioma",
+    "type": "Tipo de cuenta: {{role}}"
+  },
+  "roles": {
+    "worker": "Trabajador",
+    "employer": "Empresa que contrata",
+    "client": "Particular",
+    "provider": "Empresa de obras",
+    "admin": "Administración"
+  },
+  "paywall": {
+    "unlock": "Desbloquear",
+    "locked": "Bloqueado",
+    "hiddenPhone": "+34 6•• ••• •••",
+    "hiddenEmail": "••••••@••••.es"
+  },
+  "admin": {
+    "title": "Administración",
+    "tabs": {
+      "overview": "Resumen",
+      "users": "Cuentas",
+      "orders": "Pagos",
+      "jobs": "Ofertas",
+      "projects": "Solicitudes"
+    },
+    "revenue": "Ingresos",
+    "revenueMonth": "Este mes",
+    "jobsLive": "Ofertas publicadas",
+    "jobsUnlocked": "Ofertas activadas",
+    "applications": "Candidaturas",
+    "applicationsMonth": "Candidaturas este mes",
+    "projectsOpen": "Solicitudes abiertas",
+    "projectUnlocks": "Solicitudes desbloqueadas",
+    "byProduct": "Por producto",
+    "block": "Bloquear",
+    "unblock": "Desbloquear",
+    "blocked": "Bloqueada",
+    "grant": "Regalar créditos",
+    "grantPrompt": "¿Cuántos créditos?",
+    "close": "Cerrar",
+    "searchUsers": "Nombre o e-mail",
+    "name": "Nombre",
+    "role": "Tipo",
+    "createdAt": "Alta",
+    "user": "Cuenta",
+    "jobTitle": "Título",
+    "status": "Estado",
+    "applicants": "Candidatos"
+  },
+  "notFound": {
+    "title": "Esta página no existe",
+    "text": "Puede que el enlace esté mal o que la página ya no esté.",
+    "home": "Volver al inicio"
+  },
+  "forbidden": {
+    "title": "Esta sección no es para tu cuenta",
+    "text": "Has entrado como {{role}}. Empleo y Obras usan cuentas separadas."
+  }
+}
