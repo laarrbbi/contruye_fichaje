@@ -36,6 +36,16 @@ authored (`web/src/i18n/es.json`), English is a translation with the same keys.
 | Dev servers | `php artisan serve --port=8000` + `npm --prefix web run dev`, open http://localhost:5174 |
 | Demo data | `php artisan migrate:fresh --seed` (accounts in README, password `password`) |
 
+## Deploys
+
+- **Vercel (testing)**: one project, Root Directory `api`, config in `api/vercel.json`, entry
+  `api/api/index.php` (vercel-php runtime, PHP 8.4). The deploy's files are read-only: anything
+  Laravel writes must go to `/tmp` or the database (the entry file sets this). Postgres comes
+  from Neon (`DATABASE_URL`). Steps: `docs/deploy-vercel.md`.
+- **Postgres and MySQL both supported**: CI runs the suite on both. Keep queries portable.
+- `GET /api/ops/setup?token=…` (`OpsController`) migrates a deploy that cannot run artisan, and
+  seeds the demo on test deploys. Off without `OPS_TOKEN`; demo never in production.
+
 ## Shape of the code
 
 - `api/app/Http/Controllers/Api/Empleo/` — `JobController` (public board), `WorkerController`

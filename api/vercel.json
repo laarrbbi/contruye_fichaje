@@ -1,0 +1,40 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "npm ci --prefix ../web",
+  "buildCommand": "npm run build --prefix ../web && rm -rf vercel-web && cp -r ../web/dist vercel-web",
+  "outputDirectory": "vercel-web",
+  "regions": ["fra1"],
+  "functions": {
+    "api/index.php": {
+      "runtime": "vercel-php@0.8.0",
+      "memory": 1024,
+      "maxDuration": 30,
+      "excludeFiles": "{node_modules/**,vercel-web/**,tests/**,storage/**,database/*.sqlite,vercel.json,.vercelignore,.env*}"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/index.php" },
+    { "source": "/sanctum/:path*", "destination": "/api/index.php" },
+    { "source": "/up", "destination": "/api/index.php" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
+    },
+    {
+      "source": "/index.html",
+      "headers": [{ "key": "Cache-Control", "value": "no-cache" }]
+    }
+  ]
+}

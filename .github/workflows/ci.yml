@@ -23,6 +23,41 @@ jobs:
       - run: ./vendor/bin/pint --test
       - run: php artisan test
 
+  # The same suite on Postgres, the database of the Vercel deploy (Neon).
+  api-postgres:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env:
+          POSTGRES_USER: fichaje
+          POSTGRES_PASSWORD: secret
+          POSTGRES_DB: fichaje_test
+        ports: ['5432:5432']
+        options: >-
+          --health-cmd "pg_isready -U fichaje"
+          --health-interval 5s --health-timeout 5s --health-retries 10
+    defaults:
+      run:
+        working-directory: api
+    env:
+      DB_CONNECTION: pgsql
+      DB_HOST: 127.0.0.1
+      DB_PORT: 5432
+      DB_DATABASE: fichaje_test
+      DB_USERNAME: fichaje
+      DB_PASSWORD: secret
+    steps:
+      - uses: actions/checkout@v4
+      - uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.4'
+          extensions: mbstring, intl, pdo_pgsql
+          coverage: none
+      - run: composer install --no-interaction --prefer-dist --no-progress
+      - run: cp .env.example .env && php artisan key:generate
+      - run: php artisan test
+
   web:
     runs-on: ubuntu-latest
     defaults:

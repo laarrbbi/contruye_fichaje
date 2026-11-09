@@ -35,6 +35,13 @@ return [
         ],
     ],
 
+    // The one-time setup link (OpsController): migrations, and the demo data
+    // on a test deploy.
+    'ops' => [
+        'token' => env('OPS_TOKEN', ''),
+        'demo_seed' => (bool) env('DEMO_SEED', false),
+    ],
+
     'stripe' => [
         'secret' => env('STRIPE_SECRET', ''),
         'webhook_secret' => env('STRIPE_WEBHOOK_SECRET', ''),

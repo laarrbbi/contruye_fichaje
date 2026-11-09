@@ -22,3 +22,6 @@
 Homestead.json
 Homestead.yaml
 Thumbs.db
+
+# The website, copied in by the Vercel build (vercel.json).
+/vercel-web

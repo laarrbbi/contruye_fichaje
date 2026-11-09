@@ -12,6 +12,7 @@ use App\Http\Controllers\Api\MetaController;
 use App\Http\Controllers\Api\Obras\ClientController;
 use App\Http\Controllers\Api\Obras\CompanyDirectoryController;
 use App\Http\Controllers\Api\Obras\ProviderController;
+use App\Http\Controllers\Api\OpsController;
 use App\Http\Controllers\Api\WebhookController;
 use Illuminate\Support\Facades\Route;
 
@@ -32,6 +33,11 @@ Route::get('/jobs/{job}', [JobController::class, 'show'])->whereNumber('job');
 
 // ── Obras, public: the companies that do the work ──────────────────────────
 Route::get('/obras/companies', [CompanyDirectoryController::class, 'index']);
+
+// Setting up a deploy that cannot run commands (Vercel). Off without OPS_TOKEN.
+// Outside the rate limiter: its counters live in the database's cache table,
+// which this very link creates. A wrong token gets a 404 either way.
+Route::get('/ops/setup', [OpsController::class, 'setup'])->withoutMiddleware('throttle:api');
 
 // Payments (server to server; the signature is checked in the controller).
 Route::post('/webhooks/stripe', [WebhookController::class, 'stripe']);

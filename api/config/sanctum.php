@@ -18,11 +18,15 @@ return [
     |
     */
 
-    'stateful' => explode(',', env('SANCTUM_STATEFUL_DOMAINS', sprintf(
-        '%s%s',
-        'localhost,localhost:3000,127.0.0.1,127.0.0.1:8000,::1',
-        Sanctum::currentApplicationUrlWithPort(),
-        // Sanctum::currentRequestHost(),
+    // On Vercel the SPA and the API share one address, which differs between
+    // production and each preview: the deploy's own hosts are always stateful.
+    'stateful' => array_values(array_filter(array_merge(
+        explode(',', env('SANCTUM_STATEFUL_DOMAINS', sprintf(
+            '%s%s',
+            'localhost,localhost:3000,127.0.0.1,127.0.0.1:8000,::1',
+            Sanctum::currentApplicationUrlWithPort(),
+        ))),
+        [env('VERCEL_URL'), env('VERCEL_BRANCH_URL'), env('VERCEL_PROJECT_PRODUCTION_URL')],
     ))),
 
     /*

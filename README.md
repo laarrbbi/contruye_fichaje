@@ -86,6 +86,11 @@ Todo se decide en `api/app/Support/Present.php` y `api/app/Support/EmpleoAccess.
 `markPaid()` bloquea la fila del pedido: un pedido se entrega una sola vez aunque el webhook llegue
 dos veces. Los créditos tienen un libro (`credit_movements`) que nunca se edita.
 
+## Probarlo en Vercel
+
+Un solo proyecto de Vercel sirve la web y la API en la misma dirección, con Postgres (Neon). Los
+pasos, con los valores exactos: **[`docs/deploy-vercel.md`](docs/deploy-vercel.md)**.
+
 ## Arranque local
 
 Con Docker (como CONSTRUYE):

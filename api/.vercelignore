@@ -1,0 +1,7 @@
+# Uploads with `vercel` from the command line (a Git import uses the repository).
+/vendor
+/node_modules
+/vercel-web
+.env
+/database/*.sqlite
+/storage/logs/*.log
